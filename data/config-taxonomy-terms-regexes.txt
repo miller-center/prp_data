@@ -1,0 +1,39 @@
+Foreign Affairs:foreign affairs
+American Defense and Security:defense,security
+War and Terrorism:war,terroris
+World Happenings:world happenings
+Africa:africa
+Asia:asia
+Europe:europe
+Latin America and the Caribbean:latin america,caribbean
+Middle East:middle east
+North America:north america
+South America:south america
+Domestic Affairs:domestic affairs
+Education:education
+Energy and the Environment:energy,environment
+Health:health
+Human Rights and Civil Rights:human rights,civil rights
+Immigration:immigration
+Law and Justice:law,justice
+Media and the Press:media,press
+Religion:religio
+Race and Racism:racis
+Science and Technology:science,technology
+Social Issues:social issues
+Economic Issues:economic issues
+Finance and Banking:finance,banking
+Infrastructure:infrastructure
+Jobs and Economy:jobs,economy
+Taxation:taxation
+Trade:trade
+Governance:governance
+Congress:congress
+Elections:elections
+Federalism:federalism
+Founding and Shaping of the Nation:founding us
+Leadership:leadership
+Political Parties and Movements:political part,movements
+Politics:politics
+The Presidency:presidency
+Supreme Court:supreme court

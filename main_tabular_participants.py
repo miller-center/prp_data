@@ -9,6 +9,7 @@
 
 import json
 import sys
+import operator
 from drupal.node import Node
 from drupal.nodes import Nodes
 
@@ -31,10 +32,8 @@ if(len(sys.argv)==2):
 
 
 
-path_to_json = "/Users/mefron/prp/data/all-prp-text.json"
-
 nodes = Nodes()
-nodes.read_json(path_to_json)
+nodes.read_json()
 
 counts = {}
 
@@ -52,5 +51,9 @@ for node in nodes.nodes:
             else:
                 counts[participant] += 1
 
-for participant in counts:
-    print(f'{counts[participant]}\t\t{participant}')
+#for participant in counts:
+#    print(f'{counts[participant]}\t\t{participant}')
+
+sorted_d = sorted(counts.items(), key=operator.itemgetter(1), reverse=True)
+for k, v in sorted_d:
+    print(f'{v}\t\t{k}')
