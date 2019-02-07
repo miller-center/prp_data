@@ -15,7 +15,7 @@ from drupal.node import Node
 from drupal.nodes import Nodes
 from text.idf import Idf
 
-order_by = "idf"
+order_by_idf = True
 
 limiter = ""
 if(len(sys.argv)==2):
@@ -66,7 +66,7 @@ for node in nodes.nodes:
 sorted_d = sorted(counts.items(), key=operator.itemgetter(1), reverse=True)
 
 tf_idf = {}
-if(order_by == 'idf'):
+if(order_by_idf == True):
     for term in counts:
         term_count = counts[term]
         term_idf   = idf.idf_ngram_min(term)
