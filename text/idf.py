@@ -19,6 +19,34 @@ class Idf(object):
             return log(self.n / self.vocabulary[term])
 
 
+    def idf_ngram_max(self, ngram):
+        max_idf = 0.0
+        tokens = ngram.split()
+        for token in tokens:
+            token_idf = self.idf(token)
+            if(token_idf > max_idf):
+                max_idf = token_idf
+        return max_idf
+
+    def idf_ngram_min(self, ngram):
+        min_idf = 10 * 10^10
+        tokens = ngram.split()
+        for token in tokens:
+            token_idf = self.idf(token)
+            if(token_idf < min_idf):
+                min_idf = token_idf
+        return min_idf
+
+    def idf_ngram_avg(self, ngram):
+        idf_sum = 0.0
+        tokens = ngram.split()
+        if(len(ngram) == 0):
+            return 0.0
+        for token in tokens:
+            token_idf = self.idf(token)
+            idf_sum += token_idf
+        return idf_sum / float(len(tokens))
+
     def add_token(self, token):
         if(token not in self.vocabulary):
             self.vocabulary[token] = 1

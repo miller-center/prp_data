@@ -14,7 +14,7 @@ from drupal.node import Node
 from drupal.nodes import Nodes
 
 tags_regex = {}
-path_to_regexes = "./data/config-taxonomy-terms-regexes.txt"
+path_to_regexes = "./prp-drupal-data/config-taxonomy-terms-regexes.txt"
 fh = open(path_to_regexes, 'r')
 r_lines = fh.readlines()
 fh.close()
